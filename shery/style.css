@@ -1,0 +1,587 @@
+body{
+    /* overflow-x: hidden; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    position: relative;
+}
+
+nav h1{
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.n2{
+    display: flex;
+    gap: 2vw;
+}
+.n2 h4{
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+.n2 i{
+    margin-top: 4vh;
+    font-size: 1.5vw;
+}
+
+.mnav{
+    position: absolute;
+    height: 190vh;
+    width: 50vw;
+    right: 0%;
+    top: 0%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    transform: translateX(120%);
+    /* display: none; */
+    transition: all ease .5s;
+}
+
+.mnav h1{
+    color: white;
+    margin-left: 7vw;
+    font-size: 4vw;
+}
+
+.mnav a{
+    text-decoration: none;
+    color: white;
+}
+
+.mnav i{
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    font-size: 4vw;
+}
+
+.hero{
+    padding: 5px 200px;
+}
+
+.hero h1{
+    font-size: 9vw;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -.8vw;
+}
+
+
+.hero span{
+   color: transparent;
+   -webkit-text-stroke: 1px black;
+    transition: color ease .5s;
+}
+
+.hero span:hover{
+    color: black;
+}
+
+.hero video{
+    object-fit: cover;
+    height: 10vh;
+    width: 10vw;
+    border-radius: 50px;
+}
+
+.vcontainer{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vcontainer video{
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tpart{
+    
+    height: 60vh;
+    width: 100%;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tpart video{
+    height: 60vh;
+}
+
+.tpart .t2 h6{
+    font-size: 3vw;
+    width: 50vw;
+    font-weight: 100;
+}
+
+.tpart .t2 h6::selection{
+    color: white;
+    background-color: black;
+}
+
+.tpart .t2 span::selection{
+    color: white;
+    background-color: black;
+}
+
+.tpart .t2 span{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 2px 4px;
+}
+
+.tpart .t2 button{
+    margin-top: -20vh;
+    padding: 10px 20px;
+    font-size: 3vw;
+    background-color: transparent;
+    border: solid black;
+    border-radius: 50px;
+    transition: color ease .5s;
+}
+
+.tpart .t2 button:hover{
+    background-color: black;
+    color: white;
+}
+
+.op{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    color: #e6dede;
+    border-radius: 50px;
+}
+
+
+.op video{
+    height: 15vh;
+    border-radius: 100%;
+    border: solid black 5px;
+}
+
+.op h1{
+    font-size: 10vw;
+    font-weight: 100;
+    /* margin-left: 20vh; */
+    padding: 20vh;
+}
+
+
+.f{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px 50px 0 0;
+    z-index: 7;
+}
+.f video{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    z-index: 8;
+    opacity: 0;
+    transition: all ease .5s;
+    border-radius: 50px 5px 0 0 ;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30vh;
+    width: 30vw;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px white;
+    background-color: white;
+    z-index: 9;
+    transition: all ease .5s;
+}
+
+.content button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid black;
+}
+   .content button:hover{
+    background-color: #111;
+    color: white;
+   }
+
+.content h1{
+    font-size: 4vw;
+    font-weight: 100;
+}
+
+
+
+.sm{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.elem{
+    position: relative;
+    
+}
+
+.elem:nth-child(1){
+    border-top: solid black;
+}
+
+.sm img{
+    height: 18vh;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: -20%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all linear .5s;
+}
+
+.elem h1{
+    margin: -.5vh;
+    border-bottom: solid black;
+    height: 100%;
+    padding: 20px 20px;
+    font-size: 2vw;
+    font-weight: 500;
+    transition: all ease .5s;
+    
+    
+}
+.t{
+    border-bottom: solid black;
+}
+
+.sm h1:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:600px){
+    body{
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    section{
+        overflow: hidden;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px 10px;
+        position: relative;
+        /* overflow: hidden; */
+    }
+    
+    nav h1{
+        font-size: 6vw;
+        font-weight: 600;
+    }
+    
+    .n2{
+        display: flex;
+        gap: 2.5vw;
+    }
+    .n2 h4{
+        display: none;
+    }
+    .n2 i{
+        margin-top: 0;
+        font-size: 5vw;
+    }
+    
+    .mnav{
+        position: absolute;
+        height: 25vh;
+        width: 50vw;
+        right: 0%;
+        top: 0%;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        transform: translateX(120%);
+        transition: all ease .5s;
+    }
+    
+    .mnav h1{
+        color: white;
+        margin-left: 7vw;
+        font-size: 4vw;
+    }
+    
+    .mnav a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .mnav i{
+        position: absolute;
+        top: 2%;
+        right: 4%;
+        font-size: 5vw;
+    }
+    
+    .hero{
+        padding: 2px 40px;
+    }
+    
+    .hero h1{
+        font-size: 20vw;
+        font-weight: 500;
+        letter-spacing: -.5vw;
+    }
+    
+    
+    .hero span{
+       color: transparent;
+       -webkit-text-stroke: .5px black;
+        transition: color ease .5s;
+    }
+    
+    .hero span:hover{
+        color: black;
+    }
+    
+    .hero video{
+        object-fit: cover;
+        height: 8vh;
+        width: 40vw;
+        border-radius: 50px;
+    }
+    
+    .vcontainer{
+        height: 18vh;
+        width: 100vw;
+       overflow: hidden;
+       position: relative;
+    }
+
+    .vcontainer video{
+        height: 18vh;
+        width: 100%;
+        /* object-fit: cover; */
+    }
+    
+    .tpart{
+        height: 20vh;
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .tpart video{
+        margin-top: 1vh;
+        height: 10vh;
+    }
+    
+    .tpart .t2 h6{
+        font-size: 3vw;
+        width: 50vw;
+        font-weight: 100;
+    }
+    
+    .tpart .t2 h6::selection{
+        color: white;
+        background-color: black;
+    }
+    
+    .tpart .t2 span::selection{
+        color: white;
+        background-color: black;
+    }
+    
+    .tpart .t2 span{
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        padding: 2px 4px;
+    }
+    
+    .tpart .t2 button{
+        margin-top: -20vh;
+        padding: 10px 20px;
+        font-size: 3vw;
+        background-color: transparent;
+        border: solid black;
+        border-radius: 50px;
+        transition: color ease .5s;
+    }
+    
+    .tpart .t2 button:hover{
+        background-color: black;
+        color: white;
+    }
+    
+    .op{
+        display: none;
+        height: 10vh;
+        width: 100vw;
+        background-color: #111;
+        color: #e6dede;
+        border-radius: 50px;
+    }
+    
+    
+    .op video{
+        display: none;
+        height: 1vh;
+        /* border-radius: 100%; */
+        
+    }
+    
+    .op h1{
+        display: none;
+        font-size: 1vw;
+        font-weight: 100;
+        padding: 20vh;
+        color: black;
+    }
+
+    
+.sm{
+    margin-top: 1vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.elem{
+    position: relative;
+    
+}
+
+.elem:nth-child(1){
+    border-top: solid black;
+}
+
+.sm img{
+    height: 8vh;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: -20%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all linear .5s;
+}
+
+.elem h1{
+    margin: -.5vh;
+    border-bottom: solid black;
+    height: 100%;
+    padding: 20px 20px;
+    font-size: 4vw;
+    font-weight: 500;
+    transition: all ease .5s;
+    
+    
+}
+.t{
+    border-bottom: solid black;
+}
+
+.sm h1:hover{
+    background-color: black;
+    color: white;
+}
+
+    
+    .f{
+        height: 40vh;
+        width: 100%;
+        background-color: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px 50px 0 0;
+        z-index: 7;
+    }
+    .f video{
+        position: absolute;
+        height: 40vh;
+        width: 100vw;
+        object-fit: cover;
+        z-index: 8;
+        opacity: 0;
+        transition: all ease .5s;
+        border-radius: 50px 50px 0 0;
+    }
+    
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 10vh;
+        width: 40vw;
+        padding: 20px 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px white;
+        background-color: white;
+        z-index: 9;
+        transition: all ease .5s;
+    }
+    
+    .content button{
+        padding: 10px 20px;
+        background-color: transparent;
+        border-radius: 10px;
+        border: solid black;
+    }
+       .content button:hover{
+        background-color: #111;
+        color: white;
+       }
+    
+    .content h1{
+        font-size: 4vw;
+        font-weight: 100;
+    }
+    
+    
+}
